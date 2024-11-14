@@ -12,20 +12,26 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/GameplayLevel3.unity
+    guid: f9cdbbea84fce5c4fb0760ffb09b4dc0
+  - enabled: 1
+    path: Assets/Scenes/Congrats.unity
+    guid: 492a2cfd081aee54ba6abfcc243e1698
+  - enabled: 1
+    path: Assets/Scenes/GameplayLevel2.unity
+    guid: b7ca18d9788221e4a9029a49faa06cde
+  - enabled: 1
     path: Assets/Scenes/Baka.unity
     guid: b79d879e7c1fc564f9e17b39fed4d04e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gameplay 2.unity
     guid: 17922b082878ebc4c82ae195d3f3cef8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Gameplay 3.unity
     guid: dbf57074d3611e0409c97590007c5a13
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: b38d2d4a04f17fb4b9264644503421ab
-  - enabled: 1
-    path: Assets/Scenes/Congrats.unity
-    guid: 492a2cfd081aee54ba6abfcc243e1698
   - enabled: 1
     path: Assets/Scenes/Nyobain.unity
     guid: 89ecb90d942e1154dbf37bd060f1b293

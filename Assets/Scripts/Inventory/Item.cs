@@ -8,7 +8,18 @@ public class Item : MonoBehaviour
         Ayam,
         Cabe,
         Kecap,
-        Gula
+        Gula,
+        Ikan,
+        Belimbing,
+        Jahe,
+        Kunyit,
+        Kemiri,
+        Kemangi,
+        Garam,
+        Sapi,
+        BMerah,
+        BPutih,
+        Kelapa
     }
 
     public ItemType itemType;

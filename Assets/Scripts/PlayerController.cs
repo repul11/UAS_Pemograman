@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     int idMove = 0;
     Animator anim;
     public GameObject Pause;
+    public GameObject Skor;
 
     public GameObject Projectile; // object peluru
     public Vector2 projectileVelocity; // kecepatan peluru
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         isCanShoot = false;
         Pause.SetActive(false);
+        Skor.SetActive(false);
         EnemyController.EnemyKilled = 0;
     }
 
@@ -171,6 +173,61 @@ public class PlayerController : MonoBehaviour
             Data.score += 1;
             Destroy(collision.gameObject);
         }
+        if (collision.transform.tag.Equals("Ikan"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Belimbing"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Jahe"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Kunyit"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Kemiri"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Kemangi"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Garam"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Sapi"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("BPutih"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("BMerah"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
+        if (collision.transform.tag.Equals("Kelapa"))
+        {
+            Data.score += 1;
+            Destroy(collision.gameObject);
+        }
 
         ////////////////////////////////////////////////////////////////////
         if (collision.CompareTag("Kacang"))
@@ -211,6 +268,116 @@ public class PlayerController : MonoBehaviour
             }
         }
         if (collision.CompareTag("Gula"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Ikan"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Belimbing"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Jahe"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Kunyit"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Kemiri"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Kemangi"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Garam"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Sapi"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("BMerah"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("BPutih"))
+        {
+            // Asumsikan item di-attach ke Collider sebagai komponen
+            Item item = collision.GetComponent<Item>();
+            if (item != null)
+            {
+                Inventory.Instance.AddItem(item.itemType, item.amount);
+                Destroy(collision.gameObject);
+            }
+        }
+        if (collision.CompareTag("Kelapa"))
         {
             // Asumsikan item di-attach ke Collider sebagai komponen
             Item item = collision.GetComponent<Item>();
@@ -306,6 +473,20 @@ public class PlayerController : MonoBehaviour
     public void Bakar()
     {
         SceneManager.LoadScene("Baka");
+    }
+
+    public void Level1()
+    {
+        SceneManager.LoadScene("Gameplay");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("GameplayLevel2");
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene("GameplayLevel3");
     }
 }
 
