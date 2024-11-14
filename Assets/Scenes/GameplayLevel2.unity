@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pause: {fileID: 1453209391}
+  Skor: {fileID: 0}
   Projectile: {fileID: 0}
   projectileVelocity: {x: 0, y: 0}
   projectileOffset: {x: 0, y: 0}
@@ -2199,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5697f0335f0f5b4ba0cd8998588d79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NameScene: nyobain
+  NameScene: nyobain 1
 --- !u!50 &234239381
 Rigidbody2D:
   serializedVersion: 4
@@ -2572,7 +2573,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.65, y: -3.04, z: 0.9940709}
-  m_LocalScale: {x: 0.34682703, y: 0.34682703, z: 0.34682703}
+  m_LocalScale: {x: 0.39538282, y: 0.34682703, z: 0.34682703}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714754079}
@@ -6405,7 +6406,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.66, y: -3.04, z: 0.9940709}
-  m_LocalScale: {x: 0.34682703, y: 0.34682703, z: 0.34682703}
+  m_LocalScale: {x: 0.40578762, y: 0.34682703, z: 0.34682703}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714754079}
@@ -8443,8 +8444,8 @@ Transform:
   m_GameObject: {fileID: 1324232330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.91, y: -1.39, z: 0.9940709}
-  m_LocalScale: {x: 0.34682703, y: 0.34682703, z: 0.34682703}
+  m_LocalPosition: {x: 12.06, y: -1.88, z: 0.9940709}
+  m_LocalScale: {x: 0.6346935, y: 0.34682703, z: 0.34682703}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714754079}
