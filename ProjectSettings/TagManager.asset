@@ -8,6 +8,15 @@ TagManager:
   - Enemy
   - Ground
   - Coin
+  - Kont
+  - Kacang
+  - Cook
+  - bum
+  - Pause
+  - Cabe
+  - Kecap
+  - Gula
+  - Ayam
   layers:
   - Default
   - TransparentFX
